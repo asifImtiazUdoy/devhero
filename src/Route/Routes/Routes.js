@@ -7,6 +7,7 @@ export const routes = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
+        loader: () => fetch('https://assignment10-backend-lake.vercel.app/courses'),
         children:[
             {
                 path:'/login',
