@@ -12,6 +12,7 @@ const Sidebar = () => {
     return (
         <div className='text-center w-100'>
             <h2 className='fw-bold mb-5'>Total Category : <span className='text-info fw-bold'>{category.length}</span></h2>
+            <Link className='btn btn-outline-info d-block w-75 mx-auto mb-3' to='/'>All Courses</Link>
             {
                 category.map(cat => {
                     return (
