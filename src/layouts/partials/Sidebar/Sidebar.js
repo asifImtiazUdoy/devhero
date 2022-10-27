@@ -15,7 +15,7 @@ const Sidebar = () => {
             {
                 category.map(cat => {
                     return (
-                        <Link className='btn btn-outline-info d-block w-75 mx-auto mb-3'>{cat.category_name}</Link>
+                        <Link className='btn btn-outline-info d-block w-75 mx-auto mb-3' to={`https://assignment10-backend-lake.vercel.app/category/${cat.id}`}>{cat.category_name}</Link>
                     )
                 })
             }
